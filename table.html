@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>TimeTable 20i-2319</title>
+  </head>
+
+  <body>
+    <!-- ------------------------------------------------------ -->
+
+    <div class="nav" id="head">
+      <span id="logo">&lt <span style="color: white">DAFY</span> /&gt</span>
+      <ul id="nid">
+        <li><a href="./index.html">&ltAbout/&gt</a></li>
+        <li><a href="#">&ltTimeTable/&gt</a></li>
+      </ul>
+    </div>
+
+    <!-- ------------------------------------------------------ -->
+
+    <!-- --------------------------------------------------- -->
+    <div id="part2">
+      <div class="inpdiv">
+        <div>
+          <input
+            id="time"
+            class="in"
+            type="text"
+            placeholder="Time"
+            onchange="emp(this)"
+          />
+          <button class="btn" onclick="addColumn()">Add Row</button>
+        </div>
+        <div>
+          <input
+            id="day"
+            class="in"
+            type="text"
+            placeholder="Day"
+            onchange="emp(this)"
+          />
+          <button class="btn" onclick="addRow()">Add Column</button>
+
+        </div>
+      </div>
+      
+      <div>
+      <div class="inpdiv">
+        <input
+        id="data"
+        class="in"
+        type="text"
+        placeholder="Data"
+        />
+        <button class="btn" id="insertBtn" onclick="insertData()" disabled>Insert Data</button>
+      </div>
+    </div>
+      
+
+      <!-- ------------------------------------------------------- -->
+
+      <div class="mydiv" id="md">
+        <label class="tag2"> &lt TimeTable /&gt </label>
+
+        <table id="mytable">
+          <thead>
+            <tr id="heading">
+              <th>Time</th>
+              <th>Monday</th>
+            </tr>
+          </thead>
+          <tbody id="mt">
+            <tr>
+              <th>8:30-9:50</th>
+              <td onclick="makeActive(this)" ></td>
+            </tr>
+            <tr>
+              <th>8:30-9:50</th>
+              <td onclick="makeActive(this)" ></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- ---------------------------------------------- -->
+    </div>
+
+    <div class="page7" id="cont">
+      <section class="footer">
+        <div id="fastpic">
+          <a href="https://www.nu.edu.pk/" target="_blank"><img src="./Images/fast.png" alt="error 404" /></a>
+        </div>
+        <div id="links">
+          <ul>
+            <li><i class="fa-brands fa-twitter"></i> 
+              <a href="https://twitter.com/HuzaifaAnjum4?t=_0DVwXkIQZdb6MI1tXtwag&s=08" target="_blank">Twitter</a>
+              </li>
+            <li><i class="fa-brands fa-instagram"></i>
+              <a href="https://instagram.com/ranahuzaifaanjum?igshid=ZDdkNTZiNTM=" target="_blank">Instagram</a>
+              </li>
+
+            <li><i class="fa-brands fa-github"></i>
+            <a href="https://github.com/Huzaifa2319" target="_blank">Github</a>
+            </li>
+            <li><i class="fa-brands fa-facebook"></i>
+              <a href="https://www.facebook.com/huzaifaanjum245?mibextid=ZbWKwL" target="_blank">Facebook</a>
+              </li>
+            <li><i class="fa-brands fa-snapchat"></i>
+              <a href="https://www.snapchat.com/add/ranahuzaifa2319?share_id=pF_3RMXAadE&locale=en-US" target="_blank">Snapchat</a>
+              </li>
+            <li><i class="fa-solid fa-phone"></i>
+              <a href="tel:03136900427" target="_blank"> 03136900427</a>
+              </li>
+            
+          </ul>
+        </div>
+        <div id="contact_me">
+            <ul>
+              <li>Huzaifa Anjum</li>
+              <li>0313-6900427</li>
+              <li>E-11/2 Medical Society Flat 207-C Islamabad</li>
+              <li>Fast Nuces Islamabad</li>
+              <li></li>
+            </ul>
+        </div>
+      </section>
+      <hr />
+      <div id="copy">
+        <p>Copyright &#169 By Dafy 20i-2319</p>
+      </div>
+    </div>
+
+  </body>
+
+  <script src="./index.js"></script>
+
+</html>
